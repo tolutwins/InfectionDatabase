@@ -6,6 +6,41 @@
         <link rel="stylesheet" href="css/infected.css">
     </head>
     <body>
+        <div id="divContainer">
+            <div id="divLeft" class="col-lg-4 float-left">
+                <div id="divPatients" class="col-lg-12">
+                    <input type="text" id="txtFullName" class="col-lg-12">
+                    <select name="severity" id="slSeverity" class="col-lg-12">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                    <button id="btnAdd" class="btn btn-lg col-lg-12">Add Patients</button>
+                </div>
+                <div id="divInfo" class="col-lg-12">
+                    <ol>
+                        <li>List of patients is already displayed on the right</li>
+                        <li>Add patients information</li>
+                        <li>Search patients by partial name</li>
+                    </ol>
+                </div>
+            </div>
+            <div id="divRight" class="col-lg-7 float-right">
+                <div id="divSearch" class="col-lg-12">
+                    <input type="text" class="col-lg-8" id="txtSearch">
+                    <button id="btnSearch">ADD</button>
+                </div>
+                <di id="divList" class="col-lg-12">
+                    <table id="tbPatients" class="table table-responsive">
+                        <tr>
+                            <td>SN</td>
+                            <td>Full Name</td>
+                            <td>Severity</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
     <script src="js/infected.js"></script>

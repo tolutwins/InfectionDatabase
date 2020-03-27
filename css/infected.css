@@ -1,0 +1,27 @@
+#divContainer {
+    min-height: 1000px;
+    margin: auto;
+    font-size: 20px;
+    background-color: aqua;
+    width: 1200px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#divLeft {
+    background-color: aquamarine;
+    border: 1px solid black;
+    float: left;
+    min-height: 500px;
+}
+
+#divRight {
+    background-color: aquamarine;
+    border: 1px solid black;
+    float: right;
+    min-height: 500px;
+}
+
+#divSearch, #divList, #divPatients, #divInfo {
+    padding: 5px;
+}

@@ -16,7 +16,14 @@ function getPatientsByName() {
 }
 
 function  displayPatients(displayValue) {
-    $('#tbPatients').append(displayValue);
+    $('#tbPatients').html(displayValue);
+
+    // clear input fields
+    ClearFields();
+}
+
+function ClearFields() {
+    $('#txtFullName').val("");
 }
 
 function createPatientObject() {
@@ -30,7 +37,7 @@ function createPatientObject() {
         Severity: severity
     };
 
-    // update patients array
+    // update patients array-[]
     updatePatientsList(patientObject);
 
     // load patient list
